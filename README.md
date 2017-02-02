@@ -19,6 +19,12 @@ key 9: wxyz
 
 The first press of a key types the first letter. Each subsequent press advances to the next letter. For example, to type the word “cat”, we have to press key 2 three times, followed by the key 2 once, followed by the key 8 once. The total number of key presses is 5. This typical layout is not an efficient one. The letter “i” is used much more frequently than the letter ‘w’ in English. However, we have to press the 4 key three times to get an ‘i’, and press the 9 key only once to get a ‘w’. If these two letters are interchanged on the keypad, it will reduce the overall press count. Design an program that will result with an efficient layout and supply tests to prove your program is correct.
 
+### To Run:
+
+1. Fork and Clone -OR- Download this repository
+2. Open Terminal and cd into this repository
+3. In Terminal, enter "ruby run_francis_rocco.rb"
+
 ### Approach:
 
 1. I first decided I needed to map some text to a hash to count the frequency of letters in a given piece of text. I could have just looked up the most frequently used letters in the English language on Google but I thought it could be more fun to find out for myself.
