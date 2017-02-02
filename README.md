@@ -53,6 +53,8 @@ hire me passes with 8 new presses vs. 13 classic presses
 
 NB: As noted in "Approach", two text files are included in this repository as English language speech examples. If one would like, one could use their own text files and change the "run_francis_rocco.rb" file line 3 to those changed files.
 
+NB: test_file.rb is included to be able to test and word or phrase and how many key strokes would be needed in my approach vs. and old approach. An output is created in the run_francis_rocco.rb file and can be modified if needed.
+
 ### Suggestions for Improvement:
 
 1. My rspec tests have a few cases that can fall through the cracks. More specifc tests could be written.
