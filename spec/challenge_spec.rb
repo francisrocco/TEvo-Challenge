@@ -48,6 +48,13 @@ describe Challenge do
         sorted_array = challenge.sort_hash(hash)
         frequent_letters_array = challenge.most_frequent_letter_array(sorted_array)
         key_assign_hash = challenge.key_assign(frequent_letters_array)
+        present = challenge.present(key_assign_hash)
+
+        present_count = present.length
+        expect(present_count).to eq(8)
+
+        present_first_number = present[0][0]
+        expect(present_first_number).to eq("2")
       end
   end
 
