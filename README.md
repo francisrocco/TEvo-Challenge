@@ -48,3 +48,11 @@ Current result with included text samples is:
 9: rcxz
 
 NB: As noted in "Approach", two text files are included in this repository as English language speech examples. If one would like, one could use their own text files and change the "run_francis_rocco.rb" file line 3 to those changed files.
+
+### Suggestions for Improvement:
+
+1. My rspec tests have a few cases that can fall through the cracks. More specifc tests could be written.
+
+2. `key_assign` method feels a little too brute force. I feel there is probably a more programatic way to map through my letter array and assign to a key. I can work on this moving forward.
+
+3. `import_files` method is very specific to my example of two text files. I could turn the arguments into a splat to be able to use any amount of text files.
