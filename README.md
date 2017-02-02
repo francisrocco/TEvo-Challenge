@@ -47,9 +47,11 @@ Current result with included text samples is:
 8: syjq
 9: rcxz
 
-francis passes with 10 new presses vs. 19 classic presses
-ticket evolution passes with 22 new presses vs. 34 classic presses
-hire me passes with 8 new presses vs. 13 classic presses
+_*francis*_ passes with 10 new presses vs. 19 classic presses
+
+_*ticket*_ evolution passes with 22 new presses vs. 34 classic presses
+
+_*hire*_ me passes with 8 new presses vs. 13 classic presses
 
 NB: As noted in "Approach", two text files are included in this repository as English language speech examples. If one would like, one could use their own text files and change the "run_francis_rocco.rb" file line 3 to those changed files.
 
