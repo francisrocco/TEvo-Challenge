@@ -24,6 +24,7 @@ The first press of a key types the first letter. Each subsequent press advances 
 1. Fork and Clone -OR- Download this repository
 2. Open Terminal and cd into this repository
 3. In Terminal, enter "ruby run_francis_rocco.rb"
+4. Tests can be seen by entering "rspec spec"
 
 ### Approach:
 
