@@ -1,8 +1,8 @@
-## TEvo Challenge - Francis Rocco
+# TEvo Challenge - Francis Rocco
 
-# February 2, 2017
+## February 2, 2017
 
-# Challenge: Minimal Times of Presses on Keypads
+### Challenge: Minimal Times of Presses on Keypads
 
 Design an efficient algorithm to lay out presses on phone keypads in order to minimize the
 
@@ -35,6 +35,6 @@ count. Design an program that will result with an efficient layout and supply te
 
 program is correct.
 
-# Approach:
+### Approach:
 
-1. I first decided I needed to map some text to a hash to count the frequency of letters in a given piece of text. I could have used a large book like War and Peace, which would have been a very good representation of the frequency of English language letters but I decided to go with two, shorter works instead. One is a transcript of Chimamanda Ngozi Adichie's TED talk, *"We Should All Be Feminists"* [source] (https://vialogue.wordpress.com/2013/12/30/ted-we-should-all-be-feminists-chimamanda-ngozi-adichie-at-tedxeuston-transcript/). The other is a transcript of Michele Obama's Commencement Speech at City College's 2017 Graduation [source](https://obamawhitehouse.archives.gov/the-press-office/2016/06/03/remarks-first-lady-city-college-new-york-commencement).
+1. I first decided I needed to map some text to a hash to count the frequency of letters in a given piece of text. I could have used a large book like War and Peace, which would have been a very good representation of the frequency of English language letters but I decided to go with two, shorter works instead. One is a transcript of Chimamanda Ngozi Adichie's TED talk, *"We Should All Be Feminists"* [[source]] (https://vialogue.wordpress.com/2013/12/30/ted-we-should-all-be-feminists-chimamanda-ngozi-adichie-at-tedxeuston-transcript/). The other is a transcript of Michele Obama's Commencement Speech at City College's 2017 Graduation [[source]](https://obamawhitehouse.archives.gov/the-press-office/2016/06/03/remarks-first-lady-city-college-new-york-commencement).
