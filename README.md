@@ -34,4 +34,17 @@ The first press of a key types the first letter. Each subsequent press advances 
 
 3. I then ordered the letters in descending order by frequency. My logic is that if a letter is most used, we want it to be the first option on a key to make the least amount of presses. If we then assign the 8 most frequently used letters to the numbers 2-9, they will use only 1 key press. We then assign the next 8 letters to the numbers 2-9 for two presses each, etc.
 
+### Result:
+
+Current result with included text samples is:
+
+2: ehg
+3: tlf
+4: adp
+5: oub
+6: imv
+7: nwk
+8: syjq
+9: rcxz
+
 NB: As noted in "Approach", two text files are included in this repository as English language speech examples. If one would like, one could use their own text files and change the "run_francis_rocco.rb" file line 3 to those changed files.

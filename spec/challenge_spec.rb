@@ -43,6 +43,11 @@ describe Challenge do
 
   describe "#present" do
       it "presents the keys in the terminal" do
+        array = challenge.import_files('michelle.txt', 'chimamanda.txt')
+        hash = challenge.map_to_hash(array)
+        sorted_array = challenge.sort_hash(hash)
+        frequent_letters_array = challenge.most_frequent_letter_array(sorted_array)
+        key_assign_hash = challenge.key_assign(frequent_letters_array)
       end
   end
 
