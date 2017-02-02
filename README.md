@@ -24,15 +24,6 @@ The first press of a key types the first letter. Each subsequent press advances 
 1. Fork and Clone -OR- Download this repository
 2. Open Terminal and cd into this repository
 3. In Terminal, enter "ruby run_francis_rocco.rb"
-4. Tests can be seen by entering "rspec spec"
-
-### Approach:
-
-1. I first decided I needed to map some text to a hash to count the frequency of letters in a given piece of text. I could have just looked up the most frequently used letters in the English language on Google but I thought it could be more fun to find out for myself.
-
-2. My program is set up so any file can be used within the run method. I could have used a large book like War and Peace, which would have been a very good representation of the frequency of English language letters but I decided to go with two, shorter works instead. One is a transcript of Chimamanda Ngozi Adichie's TED talk, *"We Should All Be Feminists"* [[source]] (https://vialogue.wordpress.com/2013/12/30/ted-we-should-all-be-feminists-chimamanda-ngozi-adichie-at-tedxeuston-transcript/). The other is a transcript of Michelle Obama's Commencement Speech at City College's 2017 Graduation [[source]](https://obamawhitehouse.archives.gov/the-press-office/2016/06/03/remarks-first-lady-city-college-new-york-commencement).
-
-3. I then ordered the letters in descending order by frequency. My logic is that if a letter is most used, we want it to be the first option on a key to make the least amount of presses. If we then assign the 8 most frequently used letters to the numbers 2-9, they will use only 1 key press. We then assign the next 8 letters to the numbers 2-9 for two presses each, etc.
 
 ### Result:
 
@@ -49,13 +40,21 @@ Current result with included text samples is:
 
 **francis** passes with 10 new presses vs. 19 classic presses
 
-**ticket** evolution passes with 22 new presses vs. 34 classic presses
+**ticket evolution** passes with 22 new presses vs. 34 classic presses
 
 **hire me** passes with 8 new presses vs. 13 classic presses
 
 NB: As noted in "Approach", two text files are included in this repository as English language speech examples. If one would like, one could use their own text files and change the "run_francis_rocco.rb" file line 3 to those changed files.
 
 NB: test_file.rb is included to be able to test and word or phrase and how many key strokes would be needed in my approach vs. and old approach. An output is created in the run_francis_rocco.rb file and can be modified if needed.
+
+### Approach:
+
+1. I first decided I needed to map some text to a hash to count the frequency of letters in a given piece of text. I could have just looked up the most frequently used letters in the English language on Google but I thought it could be more fun to find out for myself.
+
+2. My program is set up so any file can be used within the run method. I could have used a large book like War and Peace, which would have been a very good representation of the frequency of English language letters but I decided to go with two, shorter works instead. One is a transcript of Chimamanda Ngozi Adichie's TED talk, *"We Should All Be Feminists"* [[source]] (https://vialogue.wordpress.com/2013/12/30/ted-we-should-all-be-feminists-chimamanda-ngozi-adichie-at-tedxeuston-transcript/). The other is a transcript of Michelle Obama's Commencement Speech at City College's 2017 Graduation [[source]](https://obamawhitehouse.archives.gov/the-press-office/2016/06/03/remarks-first-lady-city-college-new-york-commencement).
+
+3. I then ordered the letters in descending order by frequency. My logic is that if a letter is most used, we want it to be the first option on a key to make the least amount of presses. If we then assign the 8 most frequently used letters to the numbers 2-9, they will use only 1 key press. We then assign the next 8 letters to the numbers 2-9 for two presses each, etc.
 
 ### Suggestions for Improvement:
 
