@@ -13,7 +13,7 @@ class Test
     9 => "wxyz"
   }
 
-  FRANCIS_KEYS = Challenge.new("input/michelle.txt", "input/chimamanda.txt").run
+  FRANCIS_KEYS = Challenge.new.run(["input/michelle.txt", "input/chimamanda.txt"])
 
   attr_reader :word
 

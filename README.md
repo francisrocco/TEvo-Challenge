@@ -58,8 +58,6 @@ NB: test_file.rb is included to be able to test and word or phrase and how many 
 
 ### Suggestions for Improvement:
 
-1. My rspec tests have a few cases that can fall through the cracks. More specifc tests could be written.
+1. `key_assign` method feels a little too brute force. I feel there is probably a more programatic way to map through my letter array and assign to a key. I can work on this moving forward.
 
-2. `key_assign` method feels a little too brute force. I feel there is probably a more programatic way to map through my letter array and assign to a key. I can work on this moving forward.
-
-3. `import_files` method is very specific to my example of two text files. I could turn the arguments into a splat to be able to use any amount of text files.
+2. rspec tests can now be written for each specific class. I can work on these new rspec tests moving forward.

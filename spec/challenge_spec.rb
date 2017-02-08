@@ -5,14 +5,14 @@ describe Challenge do
 
   describe "#import_files" do
       it "imports files from the same directory and merges them into one array" do
-        files = challenge.import_files('input/michelle.txt', 'input/chimamanda.txt')
+        files = challenge.import_files(['input/michelle.txt', 'input/chimamanda.txt'])
         expect(files).not_to be_empty
       end
   end
 
   describe "#map_to_hash" do
       it "returns a hash/dictionary of letters and their frequency" do
-        array = challenge.import_files('input/michelle.txt', 'input/chimamanda.txt')
+        array = challenge.import_files(['input/michelle.txt', 'input/chimamanda.txt'])
         hash = challenge.map_to_hash(array)
         expect(hash).to include("a")
       end
@@ -20,7 +20,7 @@ describe Challenge do
 
   describe "#most_frequent_letter_array" do
     it "returns an array of only the letters in descending order of frequency" do
-      array = challenge.import_files('input/michelle.txt', 'input/chimamanda.txt')
+      array = challenge.import_files(['input/michelle.txt', 'input/chimamanda.txt'])
       hash = challenge.map_to_hash(array)
       sorted_array = challenge.sort_hash(hash)
       frequent_letters_array = challenge.most_frequent_letter_array(sorted_array)
@@ -32,7 +32,7 @@ describe Challenge do
 
   describe "#key_assign" do
       it "assigns letters to different keys/numbers on a phone" do
-        array = challenge.import_files('input/michelle.txt', 'input/chimamanda.txt')
+        array = challenge.import_files(['input/michelle.txt', 'input/chimamanda.txt'])
         hash = challenge.map_to_hash(array)
         sorted_array = challenge.sort_hash(hash)
         frequent_letters_array = challenge.most_frequent_letter_array(sorted_array)
@@ -43,7 +43,7 @@ describe Challenge do
 
   describe "#present" do
       it "presents the keys in the terminal" do
-        array = challenge.import_files('input/michelle.txt', 'input/chimamanda.txt')
+        array = challenge.import_files(['input/michelle.txt', 'input/chimamanda.txt'])
         hash = challenge.map_to_hash(array)
         sorted_array = challenge.sort_hash(hash)
         frequent_letters_array = challenge.most_frequent_letter_array(sorted_array)

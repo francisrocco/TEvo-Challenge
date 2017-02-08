@@ -1,23 +1,25 @@
+require 'byebug'
+
 class Input
 
-  attr_reader :file1, :file2
+  def execute(file_array)
+    all_files = []
+    file_array.each do |file|
+      all_files << File.read(file)
+    end
 
-  def initialize(file1, file2)
-    @file1 = file1
-    @file2 = file2
-  end
-
-  def execute
-    first = File.read(file1)
-    second = File.read(file2)
-    merged = combine_files(first, second)
+    merged = combine_files(all_files)
     return merged
   end
 
-  def combine_files(file1, file2)
-    first = file_to_array(file1)
-    second = file_to_array(file2)
-    return first + second
+  def combine_files(file_array)
+    final_array = []
+
+    file_array.each do |file|
+      final_array.concat(file_to_array(file))
+    end
+
+    return final_array
   end
 
   def file_to_array(file)

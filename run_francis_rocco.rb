@@ -1,8 +1,8 @@
 require_relative './lib/challenge.rb'
 require_relative './lib/test.rb'
 
-francis = Challenge.new("input/michelle.txt", "input/chimamanda.txt")
-puts francis.execute
+francis = Challenge.new
+puts francis.execute(["input/michelle.txt", "input/chimamanda.txt"])
 
 puts ""
 
