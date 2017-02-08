@@ -1,8 +1,8 @@
-require './challenge.rb'
+require './lib/challenge.rb'
 require './test_file.rb'
 
 francis = Challenge.new
-puts francis.run("michelle.txt", "chimamanda.txt")
+puts francis.run("input/michelle.txt", "input/chimamanda.txt")
 
 puts ""
 
