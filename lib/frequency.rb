@@ -6,7 +6,7 @@ class Frequency
     @input_array = input_array
   end
 
-  def sort_frequency_array
+  def execute
     frequency_hash = map_to_hash(input_array)
     sorted_array = sort_hash(frequency_hash)
     frequent_letters_array = most_frequent_letter_array(sorted_array)

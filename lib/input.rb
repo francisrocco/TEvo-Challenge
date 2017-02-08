@@ -7,7 +7,7 @@ class Input
     @file2 = file2
   end
 
-  def import_files
+  def execute
     first = File.read(file1)
     second = File.read(file2)
     merged = combine_files(first, second)
