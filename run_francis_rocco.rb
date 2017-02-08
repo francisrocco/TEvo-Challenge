@@ -1,5 +1,5 @@
-require './lib/challenge.rb'
-require './test_file.rb'
+require_relative './lib/challenge.rb'
+require_relative './lib/test.rb'
 
 francis = Challenge.new
 puts francis.run("input/michelle.txt", "input/chimamanda.txt")
