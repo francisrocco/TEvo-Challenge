@@ -1,40 +1,14 @@
 require_relative '../lib/input'
+require_relative '../lib/frequency'
 
 class Challenge
 
   def run(file1, file2)
     merged_array = Input.new(file1, file2).import_files
-    frequency_hash = map_to_hash(merged_array)
-    sorted_array = sort_hash(frequency_hash)
-    frequent_letters_array = most_frequent_letter_array(sorted_array)
+    frequent_letters_array = Frequency.new(merged_array).sort_frequency_array
     key_assign_hash = key_assign(frequent_letters_array)
     present = present(key_assign_hash)
     return present
-  end
-
-  def map_to_hash(array)
-    frequency_hash = {}
-    array.map do |char|
-      if frequency_hash[char]
-        frequency_hash[char] += 1
-      else
-        frequency_hash[char] = 1
-      end
-    end
-    return frequency_hash
-  end
-
-  def sort_hash(hash)
-    hash.sort_by { |letter, frequency| frequency }
-  end
-
-  def most_frequent_letter_array(array)
-    reverse_array = array.reverse
-    only_letters_array = []
-    reverse_array.map do |letter_array|
-      only_letters_array << letter_array[0]
-    end
-    return only_letters_array
   end
 
   def key_assign(array)
