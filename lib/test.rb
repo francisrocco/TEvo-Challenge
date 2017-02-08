@@ -1,3 +1,5 @@
+require_relative '../lib/challenge'
+
 class Test
 
   CLASSIC_KEYS = {
@@ -11,16 +13,7 @@ class Test
     9 => "wxyz"
   }
 
-  FRANCIS_KEYS = {
-    2 => "ehg",
-    3 => "tlf",
-    4 => "adp",
-    5 => "oub",
-    6 => "imv",
-    7 => "nwk",
-    8 => "syjq",
-    9 => "rcxz"
-  }
+  FRANCIS_KEYS = Challenge.new("input/michelle.txt", "input/chimamanda.txt").run
 
   attr_reader :word
 
