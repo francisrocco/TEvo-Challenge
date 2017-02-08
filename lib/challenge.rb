@@ -1,20 +1,15 @@
+require_relative '../lib/input'
+
 class Challenge
 
   def run(file1, file2)
-    merged_array = import_files(file1, file2)
+    merged_array = Input.new(file1, file2).import_files
     frequency_hash = map_to_hash(merged_array)
     sorted_array = sort_hash(frequency_hash)
     frequent_letters_array = most_frequent_letter_array(sorted_array)
     key_assign_hash = key_assign(frequent_letters_array)
     present = present(key_assign_hash)
     return present
-  end
-
-  def import_files(file1, file2)
-    first = File.read(file1)
-    second = File.read(file2)
-    merged = combine_files(first, second)
-    return merged
   end
 
   def map_to_hash(array)
@@ -67,18 +62,6 @@ class Challenge
     array.map do |sub_array|
       "#{sub_array[0] + 2}: #{sub_array[1]}"
     end
-  end
-
-  private
-
-  def combine_files(file1, file2)
-    first = file_to_array(file1)
-    second = file_to_array(file2)
-    return first + second
-  end
-
-  def file_to_array(file)
-    return file.downcase.gsub(/[^a-z]/, '').split("")
   end
 
 end
