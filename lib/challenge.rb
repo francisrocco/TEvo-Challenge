@@ -1,6 +1,7 @@
 require_relative '../lib/input'
 require_relative '../lib/frequency'
 require_relative '../lib/assign'
+require_relative '../lib/printer'
 
 class Challenge
 
@@ -8,16 +9,7 @@ class Challenge
     merged_array = Input.new(file1, file2).execute
     frequent_letters_array = Frequency.new(merged_array).execute
     key_assign_hash = Assign.new(frequent_letters_array).execute
-    present = present(key_assign_hash)
-    return present
-  end
-
-  def present(hash)
-    array = hash.sort_by { |key, letters| key }
-    final_keys = []
-    array.map do |sub_array|
-      "#{sub_array[0] + 2}: #{sub_array[1]}"
-    end
+    present = Printer.new(key_assign_hash).execute
   end
 
 end
